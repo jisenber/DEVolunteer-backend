@@ -1,34 +1,25 @@
 {
-  "name": "devolunteer-backend",
+  "name": "DEVolunteer-backend",
   "version": "1.0.0",
-  "description": "backend to devolunteer angular app",
-  "main": "server.js",
-  "engines": {
-    "node": "6.9.1"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "Jacob Isenberg, JR Iriarte, Jonathan Daniel, Michael Bishop",
+  "main": "index.js",
+  "repository": "https://github.com/jisenber/DEVolunteer-backend.git",
+  "author": "jisenber <isenberg.jacob@yahoo.com>",
   "license": "MIT",
   "dependencies": {
     "angular-mocks": "^1.6.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.1",
+    "chai": "^3.5.0",
     "cloudinary": "^1.8.0",
-    "cors": "^2.8.3",
     "dotenv": "^4.0.0",
+    "eslint": "^3.19.0",
     "express": "^4.15.2",
     "http-errors": "^1.6.1",
     "jsonwebtoken": "^7.3.0",
-    "mongoose": "^4.9.1",
-    "morgan": "^1.8.1",
-    "nodemon": "^1.11.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^3.18.0",
     "mocha": "^3.2.0",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0",
     "superagent": "^3.5.2"
   }
 }

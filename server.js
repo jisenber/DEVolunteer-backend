@@ -12,7 +12,7 @@ const errorMiddleware = require('./lib/error-midd.js');
 const cloudinary = require('cloudinary');
 
 const app = express();
-// dotenv.load();
+dotenv.load();
 
 //local mongo db will be called 'devolunteer'
 const PORT = process.env.PORT || 80;

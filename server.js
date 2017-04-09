@@ -22,7 +22,6 @@ const CLOUDINARY_URL = process.env.CLOUDINARY_URL;
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URI);
 
-app.use(express.static(`${__dirname}/build`));
 app.use(cors());
 app.use(morgan('dev'));
 app.use(authRouter);

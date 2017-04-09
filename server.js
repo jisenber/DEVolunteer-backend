@@ -12,7 +12,7 @@ const errorMiddleware = require('./lib/error-midd.js');
 const cloudinary = require('cloudinary');
 
 const app = express();
-dotenv.load();
+// dotenv.load();
 
 //local mongo db will be called 'devolunteer'
 const PORT = process.env.PORT || 80;
@@ -22,7 +22,6 @@ const CLOUDINARY_URL = process.env.CLOUDINARY_URL;
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URI);
 
-app.use(express.static(`${__dirname}/build`));
 app.use(cors());
 app.use(morgan('dev'));
 app.use(authRouter);

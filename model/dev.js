@@ -28,7 +28,8 @@ let devSchema = mongoose.Schema({
   otherwork: {type: Boolean},
   available: {type: Boolean},
   experience: {type: String},
-  reviews: [{type: mongoose.Schema.Types.ObjectId, ref: 'reviews'}],
+  reviews: [{type: String}],
+  // reviews: [{type: mongoose.Schema.Types.ObjectId, ref: 'reviews'}],
 });
 
 
